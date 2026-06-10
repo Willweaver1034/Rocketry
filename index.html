@@ -7,16 +7,16 @@
       background: linear-gradient(to bottom, #000428, #004e92);
       color: white;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 30px;
       margin: 0;
+      padding: 30px;
     }
 
     .topbar {
       background: rgba(0,0,0,0.6);
-      padding: 12px;
+      padding: 10px;
       border-radius: 10px;
       margin-bottom: 20px;
+      text-align: center;
       font-size: 14px;
     }
 
@@ -24,34 +24,38 @@
       background: rgba(255,255,255,0.1);
       padding: 20px;
       border-radius: 15px;
-      max-width: 700px;
+      max-width: 750px;
       margin: auto;
+      text-align: center;
     }
 
     img {
       width: 350px;
       border-radius: 15px;
       margin-top: 20px;
-      border: 2px solid rgba(79,195,247,0.4);
-      box-shadow: 0 0 20px rgba(79,195,247,0.2);
     }
 
     ul {
       text-align: left;
+      display: inline-block;
     }
 
-    a.button {
-      display: inline-block;
-      background: rgba(79,195,247,0.2);
-      padding: 10px 15px;
-      margin: 5px;
-      border-radius: 10px;
-      border: 1px solid #4fc3f7;
-      color: white;
+    a {
+      color: #4fc3f7;
       text-decoration: none;
     }
 
-    a.button:hover {
+    .button {
+      display: inline-block;
+      background: rgba(79,195,247,0.2);
+      border: 1px solid #4fc3f7;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .button:hover {
       background: rgba(79,195,247,0.4);
     }
   </style>
@@ -87,14 +91,14 @@
 
     <h2>Rocket Modules</h2>
 
-    <a class="button" href="missions.html">🧭 Missions</a>
-    <a class="button" href="launches.html">📡 Launch Log</a>
-    <a class="button" href="engineering.html">🛠 Engineering</a>
+    <a class="button" href="#">🧭 Missions</a>
+    <a class="button" href="#">📡 Launch Log</a>
+    <a class="button" href="#">🛠 Engineering</a>
 
     <h2>Learn More</h2>
 
-    <a class="button" href="https://www.nasa.gov" target="_blank">🌌 NASA Control Center</a>
-    <a class="button" href="https://www.spacex.com" target="_blank">🚀 SpaceX Missions</a>
+    <a class="button" href="https://www.nasa.gov" target="_blank">🌌 NASA</a>
+    <a class="button" href="https://www.spacex.com" target="_blank">🚀 SpaceX</a>
 
   </div>
 
