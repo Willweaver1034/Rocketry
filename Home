@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rocketry Hub</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #000428, #004e92);
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    img {
+      width: 350px;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    a {
+      color: #4fc3f7;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🚀 Rocketry Hub</h1>
+
+    <h2>Welcome!</h2>
+
+    <p>
+      This website is dedicated to rockets, spaceflight,
+      and aerospace engineering.
+    </p>
+
+    <img src="https://images-assets.nasa.gov/image/KSC-20230829-PH-KLS01_0033/KSC-20230829-PH-KLS01_0033~large.jpg"
+         alt="Rocket Launch">
+
+    <h2>My Favorite Rockets</h2>
+
+    <ul style="text-align:left;">
+      <li>Saturn V</li>
+      <li>Falcon 9</li>
+      <li>Starship</li>
+      <li>Space Launch System (SLS)</li>
+    </ul>
+
+    <h2>Learn More</h2>
+
+    <p>
+      <a href="https://www.nasa.gov" target="_blank">NASA</a>
+    </p>
+
+    <p>
+      <a href="https://www.spacex.com" target="_blank">SpaceX</a>
+    </p>
+  </div>
+
+</body>
+</html>
