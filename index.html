@@ -1,23 +1,23 @@
-index.html 
 <html>
 <head>
   <title>Rocketry Hub</title>
+
   <style>
-  <body>
-    <div class="topbar"> 
-     🚀 Rocketry OS | Status: NOMINAL
-    </div>
+    body {
       background: linear-gradient(to bottom, #000428, #004e92);
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 30px;
+      margin: 0;
     }
 
-    img {
-      width: 350px;
-      border-radius: 15px;
-      margin-top: 20px;
+    .topbar {
+      background: rgba(0,0,0,0.6);
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 14px;
     }
 
     .card {
@@ -28,19 +28,40 @@ index.html
       margin: auto;
     }
 
-    a {
-      color: #4fc3f7;
+    img {
+      width: 350px;
+      border-radius: 15px;
+      margin-top: 20px;
+      border: 2px solid rgba(79,195,247,0.4);
+      box-shadow: 0 0 20px rgba(79,195,247,0.2);
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    a.button {
+      display: inline-block;
+      background: rgba(79,195,247,0.2);
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 10px;
+      border: 1px solid #4fc3f7;
+      color: white;
       text-decoration: none;
     }
+
+    a.button:hover {
+      background: rgba(79,195,247,0.4);
+    }
   </style>
-.topbar {
-  background: rgba(0,0,0,0.6);
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-} 
 </head>
+
 <body>
+
+  <div class="topbar">
+    🚀 Rocketry OS | Status: NOMINAL | Fuel: 98%
+  </div>
 
   <div class="card">
     <h1>🚀 Rocketry Hub</h1>
@@ -57,23 +78,25 @@ index.html
 
     <h2>My Favorite Rockets</h2>
 
-    <ul style="text-align:left;">
+    <ul>
       <li>Saturn V</li>
       <li>Falcon 9</li>
       <li>Starship</li>
       <li>Space Launch System (SLS)</li>
     </ul>
 
+    <h2>Rocket Modules</h2>
+
+    <a class="button" href="missions.html">🧭 Missions</a>
+    <a class="button" href="launches.html">📡 Launch Log</a>
+    <a class="button" href="engineering.html">🛠 Engineering</a>
+
     <h2>Learn More</h2>
 
-    <p>
-      <a href="https://www.nasa.gov" target="_blank">NASA</a>
-    </p>
+    <a class="button" href="https://www.nasa.gov" target="_blank">🌌 NASA Control Center</a>
+    <a class="button" href="https://www.spacex.com" target="_blank">🚀 SpaceX Missions</a>
 
-    <p>
-      <a href="https://www.spacex.com" target="_blank">SpaceX</a>
-    </p>
   </div>
 
 </body>
-</html>
+</html>  
