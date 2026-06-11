@@ -4,6 +4,9 @@
 
   <style>
     body {
+      body {
+  color: white;
+}
      background:
   radial-gradient(circle at 20% 20%, rgba(255,255,255,.15) 1px, transparent 1px),
   radial-gradient(circle at 80% 40%, rgba(255,255,255,.12) 1px, transparent 1px),
@@ -126,15 +129,6 @@ a:hover {
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
-.event:not(:last-child)::after {
-  content: "";
-  display: block;
-  width: 4px;
-  height: 60px;
-  background: linear-gradient(to bottom,#4fc3f7,transparent);
-  margin: 30px auto 0 auto;
-}
-
  .intro {
   font-size: 18px;
   color: #d6ecff;
@@ -148,6 +142,10 @@ a:hover {
   border-top: 1px solid rgba(255,255,255,0.15);
   text-align: center;
   color: #b8dfff;
+}
+
+h1, h2, h3, p, div, span {
+  color: white;
 }
     
   </style>
