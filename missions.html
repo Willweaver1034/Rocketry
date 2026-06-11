@@ -15,9 +15,27 @@
       background: rgba(255,255,255,0.1);
       padding: 20px;
       border-radius: 15px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       text-align: center;
+    }
+
+    .timeline {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .event {
+      background: rgba(0,0,0,0.3);
+      padding: 15px;
+      margin: 12px 0;
+      border-radius: 10px;
+    }
+
+    .year {
+      color: #4fc3f7;
+      font-weight: bold;
+      margin-bottom: 5px;
     }
 
     a {
@@ -25,12 +43,11 @@
       text-decoration: none;
     }
 
-    .mission {
-      background: rgba(0,0,0,0.3);
-      padding: 15px;
-      margin: 10px 0;
+    .topbar {
+      background: rgba(0,0,0,0.6);
+      padding: 10px;
       border-radius: 10px;
-      text-align: left;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -39,32 +56,58 @@
 
   <div class="card">
 
-    <h1>🧭 Missions</h1>
+    <div class="topbar">
+      🧭 Space Exploration Timeline
+    </div>
+
+    <h1>🚀 Missions of Space Exploration</h1>
 
     <p>
-      Welcome to the missions page! Here you can explore famous space missions in a simple and easy way.
+      This timeline explores major milestones in space history, from the first satellite to modern reusable rockets and lunar exploration programs.
     </p>
 
-    <div class="mission">
-      <h3>🚀 Apollo 11</h3>
-      <p>
-        The first mission to land humans on the Moon in 1969.
-        Neil Armstrong and Buzz Aldrin became the first people to walk on the lunar surface.
-      </p>
-    </div>
+    <div class="timeline">
 
-    <div class="mission">
-      <h3>🚀 SpaceX Falcon 9 Missions</h3>
-      <p>
-        Modern reusable rocket system used to send satellites, cargo, and astronauts into space.
-      </p>
-    </div>
+      <div class="event">
+        <div class="year">1957 — Sputnik 1</div>
+        Sputnik 1 was the first artificial satellite ever launched into space by the Soviet Union. It marked the beginning of the Space Age and showed that humans could place objects into orbit around Earth. The satellite was very simple, transmitting a basic radio signal that could be detected on the ground. Even though it had no scientific instruments, it shocked the world and proved space exploration was possible. Its launch triggered intense competition between nations known as the Space Race. This event changed science, politics, and technology forever.
+      </div>
 
-    <div class="mission">
-      <h3>🚀 James Webb Space Telescope</h3>
-      <p>
-        A powerful space telescope that captures images of distant galaxies and helps us understand the universe.
-      </p>
+      <div class="event">
+        <div class="year">1961 — Yuri Gagarin</div>
+        Yuri Gagarin became the first human to travel into space aboard Vostok 1. His flight completed a full orbit of Earth, lasting about 108 minutes. This mission proved that humans could survive space travel and return safely. Gagarin instantly became a global hero and symbol of human achievement. His success pushed other nations, especially the United States, to accelerate their space programs. This moment marked a major breakthrough in human exploration.
+      </div>
+
+      <div class="event">
+        <div class="year">1969 — Apollo 11</div>
+        Apollo 11 successfully landed the first humans on the Moon. Neil Armstrong and Buzz Aldrin stepped onto the lunar surface while Michael Collins remained in orbit. Armstrong’s famous words marked one of the most iconic moments in history. The mission demonstrated extraordinary engineering, navigation, and teamwork. It fulfilled a major goal of the Space Race between the United States and the Soviet Union. Apollo 11 remains one of humanity’s greatest achievements.
+      </div>
+
+      <div class="event">
+        <div class="year">1981 — Space Shuttle Era</div>
+        NASA introduced the Space Shuttle program as the first reusable spacecraft system. These shuttles were designed to carry astronauts and cargo into orbit and return to Earth for reuse. They were used for deploying satellites, conducting experiments, and building space stations. The program made space missions more frequent and flexible than before. It also helped construct the International Space Station. The Shuttle era lasted until 2011 and shaped modern spaceflight.
+      </div>
+
+      <div class="event">
+        <div class="year">1998 — International Space Station</div>
+        The International Space Station began assembly in orbit through international cooperation. It became a long-term laboratory where astronauts live and conduct research in microgravity. Multiple countries, including the United States, Russia, Europe, and Japan, contributed to its construction. The ISS allows scientists to study space, Earth, and human biology in unique conditions. It has been continuously inhabited since the year 2000. It remains one of the most important scientific platforms ever built.
+      </div>
+
+      <div class="event">
+        <div class="year">2015 — Falcon 9 Reusability</div>
+        SpaceX achieved a major milestone by successfully landing the first stage of the Falcon 9 rocket. This proved that rockets could be reused instead of being discarded after one flight. Reusability significantly reduced the cost of reaching space. It also increased the frequency of launches and improved access to orbit. This breakthrough changed the economics of space travel. It marked a major shift toward commercial space innovation.
+      </div>
+
+      <div class="event">
+        <div class="year">2020 — Crew Dragon</div>
+        SpaceX’s Crew Dragon became the first commercial spacecraft to carry astronauts to the International Space Station. This mission marked the return of human launches from U.S. soil after nearly a decade. It showed that private companies could safely transport astronauts to space. The spacecraft used advanced automation and modern safety systems. This success strengthened public-private partnerships in space exploration. It opened a new era of commercial human spaceflight.
+      </div>
+
+      <div class="event">
+        <div class="year">2022 — Artemis I</div>
+        Artemis I was an uncrewed test mission for NASA’s return to the Moon program. It used the Space Launch System rocket and Orion spacecraft to travel around the Moon and return safely to Earth. The mission tested critical systems for future human lunar missions. It demonstrated NASA’s ability to plan deep space exploration once again. Artemis aims to eventually land astronauts on the Moon and prepare for Mars exploration. This program represents the next chapter of human space exploration.
+      </div>
+
     </div>
 
     <p>
