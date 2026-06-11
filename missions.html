@@ -4,11 +4,17 @@
 
   <style>
     body {
-      background: linear-gradient(to bottom, #000428, #004e92);
-      color: white;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 30px;
+     background:
+  radial-gradient(circle at 20% 20%, rgba(255,255,255,.15) 1px, transparent 1px),
+  radial-gradient(circle at 80% 40%, rgba(255,255,255,.12) 1px, transparent 1px),
+  radial-gradient(circle at 60% 80%, rgba(255,255,255,.12) 1px, transparent 1px),
+  linear-gradient(to bottom,#000428,#004e92);
+
+background-size:
+  200px 200px,
+  250px 250px,
+  300px 300px,
+  cover;
     }
 
     h1 {
@@ -18,15 +24,40 @@
       text-shadow: 0 0 15px rgba(125,211,252,0.4);
       margin-bottom: 15px;
     }
+    
+    ::-webkit-scrollbar {
+  width: 10px;
+}
 
-    .card {
-      background: rgba(255,255,255,0.1);
-      padding: 20px;
-      border-radius: 15px;
-      max-width: 950px;
-      margin: auto;
-      text-align: center;
-    }
+::-webkit-scrollbar-track {
+  background: #001b3d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4fc3f7;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7dd3fc;
+}
+
+    p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #e6f4ff;
+}
+    
+   .card {
+  background: rgba(255,255,255,0.08);
+  padding: 40px;
+  border-radius: 25px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 0 35px rgba(0,0,0,0.45);
+  backdrop-filter: blur(8px);
+}
 
     .timeline {
       text-align: left;
@@ -66,6 +97,7 @@
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     transition: all 0.3s ease;
     border: 2px solid rgba(255,255,255,0.15);
+    cursor: pointer;
 }
 
 img:hover {
@@ -74,18 +106,50 @@ img:hover {
 }
     }
 
-    a {
-      color: #4fc3f7;
-      text-decoration: none;
-    }
+   a {
+  color: #7dd3fc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: white;
+}
 
     .topbar {
-      background: rgba(0,0,0,0.6);
-      padding: 10px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.event:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 60px;
+  background: linear-gradient(to bottom,#4fc3f7,transparent);
+  margin: 30px auto 0 auto;
+}
+
+ .intro {
+  font-size: 18px;
+  color: #d6ecff;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+    
+.footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  text-align: center;
+  color: #b8dfff;
+}
+    
   </style>
 </head>
 
@@ -99,10 +163,10 @@ img:hover {
 
     <h1>🚀 Missions of Space Exploration</h1>
 
-    <p>
-      A detailed timeline of humanity’s journey into space — from the first satellite to modern reusable rockets and lunar exploration programs.
-    </p>
-
+ <p class="intro">
+Explore the missions that changed human history and pushed the boundaries of science, engineering, and space exploration.
+</p>
+    
     <div class="timeline">
 
       <div class="event">
@@ -175,5 +239,9 @@ img:hover {
 
   </div>
 
+<footer>
+  <p>🚀 Rocketry Hub | Inspiring the Next Generation of Aerospace Engineers</p>
+</footer>
+  
 </body>
 </html>
